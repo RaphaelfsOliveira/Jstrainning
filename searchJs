@@ -1,0 +1,20 @@
+/*jshint multistr:true */
+
+var text = "bla bla bla bla bla bla Rah bla bla bla Rah \
+bla bla bla bla bla bla Rah bla bla bla Rah bla bla bla  \
+bla bla bla Rah bla bla bla Rah";
+
+var myName = "Rah";
+
+var hits = [];
+
+for(var i = 0; i < text.length; i++){
+    
+    if(text[i] === "R"){
+        
+        for(var j = i; j < (myName.length + i); j++){
+            
+            hits.push(text[j]);
+        };
+    };
+};
